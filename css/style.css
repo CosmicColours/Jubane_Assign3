@@ -17,3 +17,24 @@ img {
     width: 500px;
     height: 300px;
 }
+
+#Earbutton:hover, #Eyebutton:hover, #Neckbutton:hover, #Tailbutton:hover {
+
+    transform: translateY(5px);
+
+}
+
+#Earbutton, #Eyebutton, #Neckbutton, #Tailbutton {
+  
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Ear1, #Ear2, #Earins{
+    display: none; 
+
+}
+
+#Ear3, #Ear3in {
+    display: inline;
+}
