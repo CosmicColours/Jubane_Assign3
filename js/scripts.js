@@ -19,24 +19,24 @@ $("#catcolor").on("change", function () {
 })*/
 
 var suffix = ["fur", "patch", "nose", "tail", "paw", "star", "kit", "pelt", "heart",
-"leaf", "thorn", "spot", "frost", "bite", "mouth", "ear", "branch", "claw", "leap",
-"breeze", "willow", "flower", "bloom", "feather", "blaze", "dew", "leg", "stripe",
-"stream", "face", "whisker", "fang"]
+    "leaf", "thorn", "spot", "frost", "bite", "mouth", "ear", "branch", "claw", "leap",
+    "breeze", "willow", "flower", "bloom", "feather", "blaze", "dew", "leg", "stripe",
+    "stream", "face", "whisker", "fang"]
 
 var personality = ["<p>They are a sharp-tongued and ambitious warrior who wants to be the best leader for their clan one day.</p>",
-"<p>They are a soft-spoken medicine cat who prefers to keep to themselves.</p>",
-"<P>They are a wise senior warrior who’s thinking about joining the elder’s den soon.</p>",
-"<p>They are a young reckless rookie who wants to prove themselves to their clan no matter what cost.</p>",
-"<p>They are a loner who was formally a clan cat. They now live in the outskirts of the clans mostly living a quiet solitary life.</p>",
-"<p>They are a former clan cat that gave up their duty to their clan to join a comfy life with two-legs.</p>"]
+    "<p>They are a soft-spoken medicine cat who prefers to keep to themselves.</p>",
+    "<P>They are a wise senior warrior who’s thinking about joining the elder’s den soon.</p>",
+    "<p>They are a young reckless rookie who wants to prove themselves to their clan no matter what cost.</p>",
+    "<p>They are a loner who was formally a clan cat. They now live in the outskirts of the clans mostly living a quiet solitary life.</p>",
+    "<p>They are a former clan cat that gave up their duty to their clan to join a comfy life with two-legs.</p>"]
 
 
 
 
 //taken from the excersice
-$("#catName").on("keypress", function(e) {
+$("#catName").on("keypress", function (e) {
 
-    if ( e.key == "Enter") {
+    if (e.key == "Enter") {
 
         var catname = $(this).val()
         console.log(catname)
@@ -49,9 +49,10 @@ $("#catName").on("keypress", function(e) {
 
         var randomNumP = Math.floor(Math.random() * personality.length);
         $("#myname").after(personality[randomNumP])
+
     }
 
-  
+
 
 })
 
@@ -88,7 +89,7 @@ $("#Color1 path").on("click", function () {
 
 var graycount = 0;
 
-$("#Color3 path").on("click", function () { 
+$("#Color3 path").on("click", function () {
 
     $("#Earins path").attr("fill", "#fad4cf");
 
@@ -96,25 +97,25 @@ $("#Color3 path").on("click", function () {
 
     $(".iris path").attr("fill", "#f7c307");
 
-    if (graycount == 0){
+    if (graycount == 0) {
         $(".all path").attr("fill", "url(#white)");
         graycount++
     }
 
-    else if (graycount == 1){
+    else if (graycount == 1) {
 
         $(".all path").attr("fill", "url(#grey)");
         graycount++
     }
 
-    else if (graycount == 2){
+    else if (graycount == 2) {
 
         $(".all path").attr("fill", "url(#black)");
 
         $("#Earins path").attr("fill", "#ad7872");
 
         $("#Ear3in path").attr("fill", "#ad7872");
-    
+
         graycount = 0;
     }
 
@@ -130,7 +131,7 @@ $("#Color4 path").on("click", function () {
 
     $(".iris path").attr("fill", "#a558fc");
 
-    if (patchcount == 0){
+    if (patchcount == 0) {
 
         $(".all path").attr("fill", "url(#tux)");
         patchcount++
