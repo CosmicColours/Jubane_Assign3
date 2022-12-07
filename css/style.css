@@ -10,10 +10,12 @@ body {
 
 body {
     margin: 0;
-    font-family: arial, sans-serif;
-    /*display: grid;
-    grid-template-rows: repeat(3, 1fr); */
+    font-family: 'EB Garamond', serif;
+
+
 }
+
+
 
 h1{
 

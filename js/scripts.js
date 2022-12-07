@@ -3,7 +3,7 @@ $("#Color2 path").attr("fill", "url(#calico)");
 
 $("#Color1 path").attr("fill", "url(#shell)");
 
-$("#Color3 path").attr("fill", "url(#gray)");
+$("#Color3 path").attr("fill", "url(#grey)");
 
 $("#Color4 path").attr("fill", "url(#tux)");
 /*
@@ -19,7 +19,11 @@ $("#catcolor").on("change", function () {
 })*/
 
 var suffix = ["fur", "patch", "nose", "tail", "paw", "star", "kit", "pelt", "heart",
-"leaf", "thorn", "spot", "frost", "bite", "mouth", "ear", "branch"]
+"leaf", "thorn", "spot", "frost", "bite", "mouth", "ear", "branch", "claw", "leap",
+"breeze", "willow", "flower", "bloom", "feather", "blaze", "dew", "leg", "stripe",
+"stream", "face", "whisker", "fang"]
+
+
 
 //taken from the excersice
 $("#catName").on("keypress", function(e) {
@@ -57,23 +61,11 @@ $("#Color2 path").on("click", function () {
 
 $("#Color1 path").on("click", function () {
 
-    $("#Farpaw path").attr("fill", "url(#shell)");
+    $(".all path").attr("fill", "url(#shell)");
 
-    $("#Farfoot path").attr("fill", "url(#shell)");
+    $("#Earins path").attr("fill", "#f5a98e");
 
-    $(".tails path").attr("fill", "url(#shell)");
-
-    $(".ears path").attr("fill", "url(#shell)");
-
-    $("#Body path").attr("fill", "url(#shell)");
-
-    $(".necks path").attr("fill", "url(#shell)");
-
-    $(".extra path").attr("fill", "url(#shell)");
-
-    $("#Earins path").attr("fill", "#fad4cf");
-
-    $("#Ear3in path").attr("fill", "#fad4cf");
+    $("#Ear3in path").attr("fill", "#f5a98e");
 
     $(".iris path").attr("fill", "#4d9de8");
 
@@ -91,19 +83,24 @@ $("#Color3 path").on("click", function () {
     $(".iris path").attr("fill", "#f7c307");
 
     if (graycount == 0){
-        $(".all path").attr("fill", "#e6e7e8");
+        $(".all path").attr("fill", "url(#white)");
         graycount++
     }
 
     else if (graycount == 1){
 
-        $(".all path").attr("fill", "#848491");
+        $(".all path").attr("fill", "url(#grey)");
         graycount++
     }
 
     else if (graycount == 2){
 
-        $(".all path").attr("fill", "#211f2e");
+        $(".all path").attr("fill", "url(#black)");
+
+        $("#Earins path").attr("fill", "#ad7872");
+
+        $("#Ear3in path").attr("fill", "#ad7872");
+    
         graycount = 0;
     }
 
