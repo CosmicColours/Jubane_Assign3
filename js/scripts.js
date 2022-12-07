@@ -1,7 +1,7 @@
 
-$("#Color1 path").attr("fill", "url(#calico)");
+$("#Color2 path").attr("fill", "url(#calico)");
 
-$("#Color2 path").attr("fill", "url(#shell)");
+$("#Color1 path").attr("fill", "url(#shell)");
 
 $("#Color3 path").attr("fill", "url(#gray)");
 
@@ -19,7 +19,7 @@ $("#catcolor").on("change", function () {
 })*/
 
 var suffix = ["fur", "patch", "nose", "tail", "paw", "star", "kit", "pelt", "heart",
-"leaf", "thorn", "spot"]
+"leaf", "thorn", "spot", "frost", "bite", "mouth", "ear", "branch"]
 
 //taken from the excersice
 $("#catName").on("keypress", function(e) {
@@ -40,21 +40,10 @@ $("#catName").on("keypress", function(e) {
 
 })
 
-$("#Color1 path").on("click", function () {
+$("#Color2 path").on("click", function () {
 
-    $("#Farpaw path").attr("fill", "url(#calico)");
+    $(".all path").attr("fill", "url(#calico)");
 
-    $("#Farfoot path").attr("fill", "url(#calico)");
-
-    $(".tails path").attr("fill", "url(#calico)");
-
-    $(".ears path").attr("fill", "url(#calico)");
-
-    $("#Body path").attr("fill", "url(#calico)");
-
-    $(".necks path").attr("fill", "url(#calico)");
-
-    $(".extra path").attr("fill", "url(#calico)");
 
     $("#Earins path").attr("fill", "#fad4cf");
 
@@ -66,7 +55,7 @@ $("#Color1 path").on("click", function () {
 })
 
 
-$("#Color2 path").on("click", function () {
+$("#Color1 path").on("click", function () {
 
     $("#Farpaw path").attr("fill", "url(#shell)");
 
