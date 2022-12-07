@@ -9,9 +9,23 @@ body {
 }
 
 body {
+    text-align: center;
+  background-color: #646b78;
     margin: 0;
     font-family: 'EB Garamond', serif;
 
+
+}
+
+main{
+    background-color: #eae8ec;
+
+}
+
+footer p{
+
+  
+margin-bottom: 10vh;
 
 }
 
@@ -29,7 +43,7 @@ p {
 
 #myname {
     font-weight: bold;
-    color: #840037;
+    color: #000e5e;
     
 
 }
@@ -37,7 +51,7 @@ p {
 
 
 #Earbutton:hover, #Eyebutton:hover, #Neckbutton:hover, #Tailbutton:hover, 
-#Color1:hover, #Color2:hover, #Color3:hover, #Color4:hover {
+#Color1:hover, #Color2:hover, #Color3:hover, #Color4:hover, p.random {
     transition: 0.2s;
     transform: translateY(5px);
 

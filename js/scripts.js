@@ -18,6 +18,7 @@ $("#catcolor").on("change", function () {
 
 })*/
 
+
 var suffix = ["fur", "patch", "nose", "tail", "paw", "star", "kit", "pelt", "heart",
     "leaf", "thorn", "spot", "frost", "bite", "mouth", "ear", "branch", "claw", "leap",
     "breeze", "willow", "flower", "bloom", "feather", "blaze", "dew", "leg", "stripe",
@@ -55,6 +56,7 @@ $("#catName").on("keypress", function (e) {
 
 
 })
+
 
 
 
