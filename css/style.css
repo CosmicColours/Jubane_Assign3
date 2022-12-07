@@ -16,14 +16,13 @@ body {
 }
 
 
-
 h1{
-
+font-size: 8vh;
 text-align: center;
 }
 
 p {
-
+    font-size: 3vh;
     text-align: center;
 }
 
@@ -34,9 +33,7 @@ p {
 
 }
 
-img {
-  
-}
+
 
 #Earbutton:hover, #Eyebutton:hover, #Neckbutton:hover, #Tailbutton:hover, 
 #Color1:hover, #Color2:hover, #Color3:hover, #Color4:hover {
