@@ -18,7 +18,27 @@ $("#catcolor").on("change", function () {
 
 })*/
 
+var suffix = ["fur", "patch", "nose", "tail", "paw", "star", "kit", "pelt", "heart",
+"leaf", "thorn", "spot"]
 
+//taken from the excersice
+$("#catName").on("keypress", function(e) {
+
+    if ( e.key == "Enter") {
+
+        var catname = $(this).val()
+        console.log(catname)
+
+        $(this).remove()
+        $("#myname").text(catname)
+
+        var randomNum = Math.floor(Math.random() * suffix.length);
+        $("#myname").append(suffix[randomNum])
+    }
+
+  
+
+})
 
 $("#Color1 path").on("click", function () {
 

@@ -5,12 +5,31 @@
 html,
 body {
     height: 100vh;
+    
 }
 
 body {
     margin: 0;
+    font-family: arial, sans-serif;
     /*display: grid;
     grid-template-rows: repeat(3, 1fr); */
+}
+
+h1{
+
+text-align: center;
+}
+
+p {
+
+    text-align: center;
+}
+
+#myname {
+    font-weight: bold;
+    color: #840037;
+    
+
 }
 
 img {
