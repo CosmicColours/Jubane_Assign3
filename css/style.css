@@ -14,23 +14,24 @@ body {
 }
 
 img {
-    width: 500px;
-    height: 300px;
+  
 }
 
-#Earbutton:hover, #Eyebutton:hover, #Neckbutton:hover, #Tailbutton:hover {
-
+#Earbutton:hover, #Eyebutton:hover, #Neckbutton:hover, #Tailbutton:hover, 
+#Color1:hover, #Color2:hover, #Color3:hover, #Color4:hover {
+    transition: 0.2s;
     transform: translateY(5px);
 
 }
 
-#Earbutton, #Eyebutton, #Neckbutton, #Tailbutton {
+#Earbutton, #Eyebutton, #Neckbutton, #Tailbutton,
+#Color1, #Color2, #Color3, #Color4 {
   
     cursor: pointer;
     transition: 0.3s;
 }
 
-#Ear1, #Ear2, #Earins{
+#Ear1, #Ear2, #Earins, #Tail2, #Tail1, #Neck1, #Neck2{
     display: none; 
 
 }
