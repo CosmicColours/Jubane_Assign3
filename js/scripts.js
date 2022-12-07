@@ -6,17 +6,7 @@ $("#Color1 path").attr("fill", "url(#shell)");
 $("#Color3 path").attr("fill", "url(#grey)");
 
 $("#Color4 path").attr("fill", "url(#tux)");
-/*
-$("#catcolor").on("change", function () {
 
-    console.log("change")
-
-    var newcolor = $(this).val();
-    console.log(newcolor)
-    $("#Ear3 path").css("fill", newcolor)
-
-
-})*/
 
 
 var suffix = ["fur", "patch", "nose", "tail", "paw", "star", "kit", "pelt", "heart",
@@ -51,12 +41,34 @@ $("#catName").on("keypress", function (e) {
         var randomNumP = Math.floor(Math.random() * personality.length);
         $("#myname").after(personality[randomNumP])
 
+        
     }
 
+ 
+})
+
+$("#catcolor").on("change", function () {
+
+    console.log("change")
+
+    var newcolor = $(this).val();
+    console.log(newcolor)
+    $(".iris path").css("fill", newcolor)
 
 
 })
 
+$("#earcolor").on("change", function () {
+
+    console.log("change")
+
+    var newcolor = $(this).val();
+    console.log(newcolor)
+    
+    $("#Earins path").attr("fill", newcolor);
+
+    $("#Ear3in path").attr("fill", newcolor);
+})
 
 
 
@@ -66,12 +78,6 @@ $("#Color2 path").on("click", function () {
     $(".all path").attr("fill", "url(#calico)");
 
 
-    $("#Earins path").attr("fill", "#fad4cf");
-
-    $("#Ear3in path").attr("fill", "#fad4cf");
-
-    $(".iris path").attr("fill", "#00a13b");
-
 
 })
 
@@ -80,24 +86,11 @@ $("#Color1 path").on("click", function () {
 
     $(".all path").attr("fill", "url(#shell)");
 
-    $("#Earins path").attr("fill", "#f5a98e");
-
-    $("#Ear3in path").attr("fill", "#f5a98e");
-
-    $(".iris path").attr("fill", "#4d9de8");
-
-
 })
 
 var graycount = 0;
 
 $("#Color3 path").on("click", function () {
-
-    $("#Earins path").attr("fill", "#fad4cf");
-
-    $("#Ear3in path").attr("fill", "#fad4cf");
-
-    $(".iris path").attr("fill", "#f7c307");
 
     if (graycount == 0) {
         $(".all path").attr("fill", "url(#white)");
@@ -127,11 +120,6 @@ $("#Color3 path").on("click", function () {
 var patchcount = 0;
 
 $("#Color4 path").on("click", function () {
-    $("#Earins path").attr("fill", "#fad4cf");
-
-    $("#Ear3in path").attr("fill", "#fad4cf");
-
-    $(".iris path").attr("fill", "#a558fc");
 
     if (patchcount == 0) {
 
