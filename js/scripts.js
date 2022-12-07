@@ -27,7 +27,7 @@ var personality = ["<p>They are a sharp-tongued and ambitious warrior who wants 
 "<p>They are a soft-spoken medicine cat who prefers to keep to themselves.</p>",
 "<P>They are a wise senior warrior who’s thinking about joining the elder’s den soon.</p>",
 "<p>They are a young reckless rookie who wants to prove themselves to their clan no matter what cost.</p>",
-"<p>They are a loner who was formally a clan cat, who now lives in the outskirts of the clans, they mostly live a quiet solitary life.</p>",
+"<p>They are a loner who was formally a clan cat. They now live in the outskirts of the clans mostly living a quiet solitary life.</p>",
 "<p>They are a former clan cat that gave up their duty to their clan to join a comfy life with two-legs.</p>"]
 
 
